@@ -1,0 +1,500 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Segoe UI Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Regular'), url('/src/fonts/Segoe UI.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Segoe UI Bold'),
+    url('/src/fonts/Segoe UI Bold.woff') format('woff');
+}
+
+body {
+  min-width: 360px;
+  font-family: 'Segoe UI Regular', sans-serif;
+}
+
+.mainContainer {
+  padding-inline: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainContainer {
+    padding-inline: 70px;
+  }
+}
+
+.card {
+  padding-block: 45px;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26.6px;
+  color: #161c2d;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__title {
+    font-size: 37px;
+    line-height: 49.21px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card__topFlex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.card__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card__twoFlex {
+  display: flex;
+  gap: 15px;
+}
+
+.card__last {
+  width: 142.5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__last {
+    width: 412px;
+  }
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.card__price {
+  font-size: 19px;
+  line-height: 25.27px;
+  color: #161c2d;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__price {
+    font-size: 31px;
+    line-height: 41.23px;
+    margin-bottom: 20px;
+  }
+}
+
+.card__articul {
+  font-size: 12px;
+  line-height: 15.96px;
+  font-weight: 400;
+  color: #939393;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__articul {
+    font-size: 17px;
+    line-height: 22.61px;
+    margin-bottom: 20px;
+  }
+}
+
+.card__flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__flex {
+    margin-bottom: 20px;
+  }
+}
+
+.card__itemFlex {
+  display: flex;
+  gap: 10px;
+}
+
+.card__people {
+  background-image: url(/src/images/people.svg);
+  width: 52px;
+  height: 52px;
+  display: block;
+}
+
+.card__line {
+  border: 1px solid #440005;
+  height: 25px;
+}
+
+.card__item {
+  background-image: url(/src/images/item.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 28px;
+  display: block;
+}
+
+.card__item1 {
+  background-image: url(/src/images/item1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 28px;
+  display: block;
+}
+
+.card__item2 {
+  background-image: url(/src/images/item2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 28px;
+  display: block;
+}
+
+.card__item3 {
+  background-image: url(/src/images/item3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.card__item4 {
+  background-image: url(/src/images/item4.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 19px;
+  display: block;
+}
+
+.card__paragraph {
+  font-size: 12px;
+  line-height: 15.96px;
+  font-weight: 400;
+  color: #161c2d;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__paragraph {
+    font-size: 17px;
+    line-height: 22.61px;
+  }
+}
+
+.card__svgFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card__inlineFlex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card__color {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__color {
+    margin-bottom: 30px;
+  }
+}
+
+.card__colorItem {
+  display: flex;
+  gap: 10px;
+}
+
+.card__item5 {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #2e97da;
+}
+
+.card__item6 {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #607c5a;
+}
+
+.card__relative {
+  position: relative;
+}
+
+.card__input {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  border: none;
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  line-height: 26.6px;
+  font-family: 'Segoe UI Regular', sans-serif;
+  font-weight: 300;
+}
+
+.card__input:focus {
+  outline: none;
+  border: none;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.card__minus::before {
+  position: absolute;
+  content: '-';
+  color: #b92617;
+  top: 15px;
+  left: 5%;
+}
+
+.card__plus::before {
+  position: absolute;
+  content: '+';
+  color: #b92617;
+  top: 15px;
+  right: 5%;
+}
+
+.card__button {
+  font-family: 'Segoe UI Regular', sans-serif;
+  font-weight: 400;
+  background-color: #b92617;
+  width: 100%;
+  padding-block: 15px;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 21.28px;
+  color: white;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__button {
+    height: 50px;
+  }
+}
+
+.card__cash {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__cash {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.accordion__margin {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .accordion__margin {
+    margin-bottom: 30px;
+  }
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 15.96px;
+  color: #161c2d !important;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1440px) {
+  .card-link {
+    font-size: 17px;
+    line-height: 22.61px;
+  }
+}
+
+.card-link::after {
+  content: '';
+  background-image: url(/src/images/buttonPlus.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 30px;
+  height: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card-link::after {
+    width: 40px;
+    height: 20px;
+  }
+}
+
+.card__question {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 15.96px;
+  color: #161c2d;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__question {
+    font-size: 17px;
+    line-height: 22.61px;
+  }
+}
+
+.card__question::before {
+  content: '';
+  background-image: url(/src/images/question.svg);
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.card__sticky {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+  }
+}
+
+.card__banner {
+  position: relative;
+  background-image: url(/src/images/banner.png);
+  display: block;
+  width: 100%;
+  height: 190px;
+  background-size: cover;
+  background-position-x: 70%;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__banner {
+    height: 320px;
+    background-position: center;
+  }
+}
+
+.card__banner::after {
+  content: '';
+  width: 100%;
+  height: 50%;
+  pointer-events: none;
+  background: linear-gradient(#000000b3, #0000);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__bannerTitle {
+  position: absolute;
+  bottom: 45px;
+  left: 20px;
+  font-size: 16px;
+  line-height: 17.2px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__bannerTitle {
+    font-size: 35px;
+    line-height: 37.63px;
+    bottom: 50%;
+  }
+}
+
+.card__bannerDesk {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 16px;
+  line-height: 26.88px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__bannerDesk {
+    font-size: 35px;
+    line-height: 58.8px;
+    bottom: 25%;
+  }
+}
+
+.card__video {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.card-header {
+  background-color: transparent;
+}
